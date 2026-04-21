@@ -1,0 +1,86 @@
+---
+// ここはAstroのコンポーネントやJSを書く場所です（今回は空でOK）
+import '../global.css';
+---
+
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Portfolio | Robotics & AI</title>
+  </head>
+  <body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-indigo-100 selection:text-indigo-900">
+    <main class="max-w-4xl mx-auto px-6 py-16 md:py-24">
+      
+      <header class="mb-20">
+        <div class="inline-block px-3 py-1 mb-4 text-xs font-semibold tracking-wider text-indigo-700 uppercase bg-indigo-100 rounded-full">
+          Master's Student
+        </div>
+        <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 mb-6 leading-tight">
+          Engineering the Future of <br class="hidden md:block" />
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-cyan-500">
+            Robotics & AI
+          </span>
+        </h1>
+        <p class="text-lg md:text-xl text-slate-600 leading-relaxed max-w-2xl">
+          名古屋大学大学院 情報通信工学専攻 修士1年。<br />
+          文系大学を中退後、フリーランスを経て情報系へ。現在は自律移動ロボットやVision-Language Model (VLM) を活用した意思決定システムの研究に取り組んでいます。
+        </p>
+      </header>
+
+      <section class="mb-20">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6">Research & Focus</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+          
+          <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md hover:-translate-y-1 transition-all duration-300">
+            <div class="w-10 h-10 bg-indigo-50 rounded-lg flex items-center justify-center mb-4 text-indigo-500">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path></svg>
+            </div>
+            <h3 class="font-bold text-lg text-slate-900 mb-2">自律移動ロボットの環境適応</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              3D LiDARを用いたSLAM技術を活用し、動的環境におけるロボットの適応性評価システムの構築を行っています。
+            </p>
+          </div>
+
+          <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md hover:-translate-y-1 transition-all duration-300">
+            <div class="w-10 h-10 bg-cyan-50 rounded-lg flex items-center justify-center mb-4 text-cyan-500">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+            </div>
+            <h3 class="font-bold text-lg text-slate-900 mb-2">VLM × Robotics</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Vision-Language Modelを利用し、空間のコンテキストを理解して最適な行動を決定するハイブリッドアーキテクチャの開発。
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="mb-20">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6">Tech Stack</h2>
+        <div class="flex flex-wrap gap-3">
+          <span class="px-5 py-2.5 bg-white border border-slate-200 text-slate-700 rounded-xl text-sm font-semibold hover:border-indigo-400 hover:text-indigo-600 hover:bg-indigo-50 transition-colors cursor-default shadow-sm">Python</span>
+          <span class="px-5 py-2.5 bg-white border border-slate-200 text-slate-700 rounded-xl text-sm font-semibold hover:border-indigo-400 hover:text-indigo-600 hover:bg-indigo-50 transition-colors cursor-default shadow-sm">C++</span>
+          <span class="px-5 py-2.5 bg-white border border-slate-200 text-slate-700 rounded-xl text-sm font-semibold hover:border-indigo-400 hover:text-indigo-600 hover:bg-indigo-50 transition-colors cursor-default shadow-sm">ROS 2</span>
+          <span class="px-5 py-2.5 bg-white border border-slate-200 text-slate-700 rounded-xl text-sm font-semibold hover:border-indigo-400 hover:text-indigo-600 hover:bg-indigo-50 transition-colors cursor-default shadow-sm">Unity</span>
+        </div>
+      </section>
+
+      <section>
+        <div class="bg-slate-900 text-white p-8 md:p-12 rounded-3xl relative overflow-hidden">
+          <div class="relative z-10">
+            <h2 class="text-2xl font-bold mb-4">Connect / Contact</h2>
+            <p class="text-slate-400 mb-8 max-w-md">
+              研究開発のインターンシップやカジュアルな面談など、お気軽にお声がけください。
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <a href="#" class="bg-white text-slate-900 px-6 py-3 rounded-xl font-semibold hover:bg-slate-100 transition-colors">GitHub</a>
+              <a href="#" class="bg-slate-800 text-white border border-slate-700 px-6 py-3 rounded-xl font-semibold hover:bg-slate-700 transition-colors">Zenn / Qiita</a>
+            </div>
+          </div>
+          <div class="absolute -right-24 -top-24 w-80 h-80 bg-indigo-500 rounded-full mix-blend-multiply filter blur-3xl opacity-30"></div>
+        </div>
+      </section>
+
+    </main>
+  </body>
+</html>
